@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header>
+        
+            <p>Victory</p>
+
+            <div class="toggle-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+       
+        
+        <nav id="nav-bar">
+
+            
+            <div class="horizon ">
+                <a href="">Home</a>
+                <a href="">Menus</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+            </div>
+
+        </nav>
+
+        
+
+    </header>
+    
+    <section>
+        
+    </section>
+
+    <script>
+
+        console.log("Inside script")
+        let button = document.querySelector('.toggle-button');
+        let menuBar = document.querySelector('.horizon');
+       
+        button.addEventListener('click', () => {
+
+
+            console.log("Inside click ")
+
+        menuBar.classList.toggle('display');
+
+
+        });
+    </script>
+</body>
+</html>

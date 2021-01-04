@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+   
+}
+nav{
+    background-color: aliceblue;
+}
+.heade{
+    text-align: center;
+    text-decoration: italic;
+    width: 80%;
+    margin: 0px auto;
+
+}
+.heade h3{
+    padding-top: 8px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 32px;
+
+}
+.navbar-expand-lg{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-toggle, .navbar-toggler {
+    border: none;
+    background-color: rgb(235, 106, 83);
+    margin-bottom: 10px;
+}
+.navbar-toggle:hover, .navbar-toggler:hover{
+    border: none;
+    background-color: rgb(235, 106, 83);
+    position: relative;
+    
+
+
+}
+.navbar-collapse, .collapse{
+
+    width:100%
+}
+.navbar-toggler, .collapsed{
+
+    border: 1px solid rgb(235, 106, 83);
+    outline:none;
+}
+.navbar-toggler-icon{
+
+    color: white;
+    
+}
+.navbar-nav , .mr-auto{
+text-align: center;
+}
+
+a.nav-link {
+    padding: 17px 0px;
+}
+.nav-item{
+
+    width: 100%;
+    background-color: rgba(250, 250, 250, 0.5);
+    padding: 0px 2%;
+
+    
+}
+.nav-item a , .nav-item a.active{
+    border-bottom: 1px solid rgb(204, 203, 203)!important;
+    
+    color: rgb(38, 39, 39)!important;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: lighter!important;
+    
+}
+
+.navbar-inverse {
+    /* background-color: #222; */
+    /* border-color: #080808; */
+
+    background-color: white;
+    border: none;
+}
+button.navbar-toggle{
+    border: none!important;
+    background-color: rgb(235, 106, 83)!important;
+}
+
+button.collapsed:hover{
+    border: none!important;
+    background-color: rgb(235, 106, 83)!important;
+}
+
+
+
+
+section.bg-banner{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+
+
+}
+section.bg-banner{
+    background: url(images/banner-bg.jpg);
+}
+
+.banner-div{
+   
+    color: white;
+
+    padding: 10px 5%;
+
+}
+.banner-div {
+
+    color: white;
+    text-align: center;
+    padding: 10vh 10px;
+    }
+h1#find {
+
+font-size: 25px;
+margin: 10px 0px;
+}
+p#asian{
+
+font-family: 'Spectral', serif;
+font-size: 48px;
+letter-spacing: 1px;
+font-weight: 600;
+}
+p#desc{
+
+line-height: 25px;
+padding: 0 25%;
+}
+
+
+
+.contact_section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-around;
+}
+
+.left_contact_form {
+    width: 45%;
+}
+
+.right_contact-info {
+    width: 50%;
+    padding-left: 2%;
+}
+
+.left_contact_form {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact_left_details {
+    display: block;
+    padding: 6px 12px;
+    width: 50%;
+    padding: 20px;
+}
+
+.contact_right_details {
+    display: block;
+    padding: 6px 12px;
+    width: 50%;
+    padding: 20px;
+}
+
+.contact_msg_head h2 {
+    margin-bottom: 60px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #121212;
+}
+
+.contact_input_left>input {
+    display: block;
+    border-radius: 3px;
+    padding-left: 15px;
+    font-size: 13px;
+    width: 100%;
+    color: #4a4a4a;
+    line-height: 44px;
+    height: 44px;
+    background-color: #f4f4f4;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.contact_right_details>textarea {
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 13px;
+    width: 100%;
+    color: #4a4a4a;
+    line-height: 44px;
+    height: 118px;
+    max-height: 220px;
+    background-color: #f4f4f4;
+    border: none;
+    margin-bottom: 25px;
+    margin-top: 85px;
+    outline: none;
+}
+
+#contact_submit {
+    display: inline-block;
+    background-color: #f2745f;
+    color: #fff!important;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    letter-spacing: 0.5;
+}
+
+.contact_info_head h2 {
+    text-align: left;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #121212;
+}
+
+.contact_text p {
+    margin-top: -5px;
+    color: #9a9a9a;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: 'Roboto', arial, sans-serif;
+    margin: 0 0 10px;
+}
+
+.cont_address em {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #aaa;
+}
+
+
+/***Contact end **/
+
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 80vh;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+#footer-container{
+
+    background-color: #363e50;
+
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr ;
+    grid-column-gap: 15px;
+    align-content: center;
+    height: 25vh;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.li{
+    list-style-type: none;
+    background-color: white;
+    padding: 5px 11px;
+    border-radius: 50%;
+}
+.copyright-box{
+
+    justify-self: center;
+    align-self: center;
+}
+.copyright-box p, .para-box p{
+
+    color: white;
+    font-size: 13px;
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 776px) {
+    
+    #footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+   
+        align-content: center;
+        justify-items: center;
+    }
+    .li{
+
+        margin-left: 15px;
+    }
+    p#desc{
+
+        padding: 0px 10%;
+    }
+  }
+
+
+
+  @media screen and (max-width: 992px) {
+    /***Contact Section **/
+    .contact_section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .left_contact_form {
+        width: 100%;
+    }
+    .right_contact-info {
+        width: 100%;
+        margin-top: 5vh;
+        padding-left: 20px;
+    }
+    .left_contact_form {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_left_details {
+        display: block;
+        padding: 6px 12px;
+        width: 100%;
+        padding: 20px;
+    }
+    .contact_right_details {
+        display: block;
+        padding: 6px 12px;
+        width: 100%;
+        padding: 20px;
+    }
+    .contact_msg_head h2 {
+        margin-bottom: 60px;
+        text-align: left;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #121212;
+    }
+    .contact_input_left>input {
+        display: block;
+        border-radius: 3px;
+        padding-left: 15px;
+        font-size: 13px;
+        width: 100%;
+        color: #4a4a4a;
+        line-height: 44px;
+        height: 44px;
+        background-color: #f4f4f4;
+        border: none;
+        margin-bottom: 30px;
+    }
+    .contact_right_details>textarea {
+        border-radius: 3px;
+        padding-left: 15px;
+        padding-top: 10px;
+        font-size: 13px;
+        width: 100%;
+        color: #4a4a4a;
+        line-height: 44px;
+        height: 122px;
+        max-height: 220px;
+        background-color: #f4f4f4;
+        border: none;
+        margin-bottom: 25px;
+        margin-top: 0px;
+        outline: none;
+    }
+   
+    .contact_info_head h2 {
+        text-align: left;
+        margin-bottom: 5vh;
+        margin-top: 20px;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #121212;
+    }
+    .contact_text p {
+        margin-top: -5px;
+        color: #9a9a9a;
+        font-size: 13px;
+        line-height: 24px;
+        font-family: 'Roboto', arial, sans-serif;
+        margin: 0 0 10px;
+    }
+    .cont_address em {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: #aaa;
+    }
+    /***Contact end **/
+  
+}
+
+
+@media screen and (min-width: 992px) {
+
+
+    ul.navbar-nav.mr-auto {
+
+    
+    
+
+        display: flex!important;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0px 20px 0px 80px;
+        background-color: aliceblue;
+    }
+    .nav-item{
+
+        background-color: transparent;
+
+    }
+    .nav-item a{
+        border: none!important;
+        font-size: 14px;
+    }
+
+}

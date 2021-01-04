@@ -1,0 +1,536 @@
+* {
+    margin: 0px;
+    font-family: Roboto, arial, sans-serif;
+}
+
+
+/*css for header*/
+
+header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+   
+}
+nav{
+    background-color: aliceblue;
+}
+.heade{
+    text-align: center;
+    text-decoration: italic;
+    width: 80%;
+    margin: 0px auto;
+
+}
+.heade h3{
+    padding-top: 8px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 32px;
+
+}
+.navbar-expand-lg{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-toggle, .navbar-toggler {
+    border: none;
+    background-color: rgb(235, 106, 83);
+    margin-bottom: 10px;
+}
+.navbar-toggle:hover, .navbar-toggler:hover{
+    border: none;
+    background-color: rgb(235, 106, 83);
+    position: relative;
+    
+
+
+}
+.navbar-collapse, .collapse{
+
+    width:100%
+}
+.navbar-toggler, .collapsed{
+
+    border: 1px solid rgb(235, 106, 83);
+    outline:none;
+}
+.navbar-toggler-icon{
+
+    color: white;
+    
+}
+.navbar-nav , .mr-auto{
+text-align: center;
+}
+
+a.nav-link {
+    padding: 17px 0px;
+}
+.nav-item{
+
+    width: 100%;
+    background-color: rgba(250, 250, 250, 0.5);
+    padding: 0px 2%;
+
+    
+}
+.nav-item a , .nav-item a.active{
+    border-bottom: 1px solid rgb(204, 203, 203)!important;
+    
+    color: rgb(38, 39, 39)!important;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: lighter!important;
+    
+}
+
+.navbar-inverse {
+    /* background-color: #222; */
+    /* border-color: #080808; */
+
+    background-color: white;
+    border: none;
+}
+button.navbar-toggle{
+    border: none!important;
+    background-color: rgb(235, 106, 83)!important;
+}
+
+button.collapsed:hover{
+    border: none!important;
+    background-color: rgb(235, 106, 83)!important;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 65px;
+    background: transparent;
+    background: url(https://templatemo.com/templates/templatemo_507_victory/img/heading-bg.jpg) no-repeat center center/cover;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.blogcontainer {
+    display: flex;
+    flex-direction: column;
+    /*border: solid red;*/
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    padding-top: 80px;
+}
+
+.blog-item {
+    display: block;
+    /*border :solid yellow;*/
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 100%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-item img {
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.date {
+    color: #f2745f;
+    background-color: rgba(250, 250, 250, 0.9);
+    position: absolute;
+    padding: 8px 14px;
+    font-weight: bold;
+    font-size: 17px;
+    top: 0px;
+    left: 0px;
+}
+
+.content h4 {
+    margin-bottom: 12px;
+}
+
+.content span {
+    margin-bottom: 22px;
+}
+
+.content p {
+    margin-bottom: 14px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.read-more a {
+    color: #f2745f;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.content {
+    margin: 0px 0px;
+    background-color: #f2f6ff;
+    padding: 20px 30px;
+}
+
+.page-number-container {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-number {
+    display: flex;
+    /*border: solid black;*/
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.page-number li {
+    list-style: none;
+    padding: 10px 0px;
+    margin: 0px 8px;
+    background-color: #f2f6ff;
+    /*border: solid red;*/
+}
+
+.page-number a {
+    /*border: solid yellow;*/
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.page-number a:hover {
+    /*border: solid yellow;*/
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #F2745F;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.activated {
+    background-color: #F2745F;
+}
+
+#bottom-feature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 400px;
+    background: transparent;
+    background: url("https://templatemo.com/templates/templatemo_507_victory/img/signup-bg.jpg") no-repeat center center/cover;
+    color: white;
+    font-weight: bold;
+}
+
+#bottom-feature-container-head {
+    margin-bottom: 40PX;
+    text-align: center;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 1100px) {
+    #bottom-feature-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 80px;
+        background: transparent;
+        background: url("https://templatemo.com/templates/templatemo_507_victory/img/signup-bg.jpg") no-repeat center center/cover;
+        color: white;
+        font-weight: bold;
+    }
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500Px;
+        align-items: center;
+        padding: 0px;
+        /*border: solid red;*/
+    }
+    .signup-form input {
+        padding: 12px 20px;
+        border-style: none;
+        outline: none;
+        line-height: 1.4554;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        border-radius: 3px;
+        width: 55%;
+        margin: 14px 14px;
+    }
+    .signup-form input::placeholder {
+        font-weight: bold;
+    }
+    .btn {
+        padding: 10px 8px;
+        font-weight: bold;
+        border: 1px solid #ffff;
+        background-color: transparent;
+        color: #ffffff;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        width: 30%;
+        border-radius: 3px;
+    }
+   
+    /*for footer container*/
+    /*//////*/
+    footer {
+        margin: 0px 0px;
+        background-color: #363e50;
+        padding: 5vh 0px;
+    }
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #363e50;
+        margin: auto;
+    }
+    .copyright-box {
+        
+        color: white;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .copyright-box h4 {
+        padding-top: 25px;
+        margin: auto;
+    }
+    
+    .icon-box ul {
+        
+        display: flex;
+    
+        justify-content: space-around;
+        padding: 5px 15px;
+    }
+    .icon-box li {
+        width: 100%;
+        list-style: none;
+        padding: 8px 12px;
+        color: gray;
+        background-color: #ffff;
+        border-radius: 100%;
+        margin: 4px;
+    }
+    .icon-box li:hover {
+        background-color: #F2745F;
+        transition: 0.38s;
+        list-style: none;
+        padding: 8px 12px;
+        color: gray;
+        border-radius: 100%;
+        margin: 4px;
+    }
+    .para-box {
+        width: 100%;
+        padding: 5px 40px;
+        color: white;
+        align-items: center;
+        font-weight: bold;
+        text-align: center;
+    }
+    .para-box p {
+        padding-top: 25px;
+    }
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (min-width: 1100px) {
+    #bottom-feature-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 10%;
+        background: transparent;
+        background: url("https://templatemo.com/templates/templatemo_507_victory/img/signup-bg.jpg") no-repeat center center/cover;
+        color: white;
+        font-weight: bold;
+    }
+    .signup-form {
+        display: flex;
+        /*border: solid yellow;*/
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+    }
+    .signup-form input {
+        padding: 12px 20px;
+        border-style: none;
+        outline: none;
+        line-height: 1.4554;
+        font-family: 'Roboto', sans-serif;
+        ;
+        font-size: 14px;
+        border-radius: 3px;
+        width: 100%;
+        margin: 0px 14px;
+    }
+    .signup-form input::placeholder {
+        font-weight: bold;
+    }
+    .btn {
+        padding: 10px 8px;
+        font-weight: bold;
+        border: 1px solid #ffff;
+        background-color: transparent;
+        color: #ffffff;
+        /*display: inline-block;*/
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        width: 30%;
+        border-radius: 3px;
+    }
+    .blog-item {
+       
+        width: 70%;
+      
+      
+    }
+    
+    .blog-item img {
+        width: 100%;
+        margin: 0px 0px;
+    }
+    /*//////*/
+    
+    #footer-container {
+        display: flex;
+        /*border: solid blue;*/
+        justify-content: space-around;
+        background-color: #363e50;
+        margin: auto;
+        padding: 5vh 0px;
+
+    }
+    .copyright-box {
+        /* border: solid red; */
+        /* position: relative; */
+        /* width: 30%; */
+        /* padding: 25px 40px; */
+        text-align: center;
+        color: white;
+        align-items: center;
+        font-weight: bold;
+    }
+    .copyright-box h4 {
+        padding-top: 25px;
+    }
+    .icon-box {
+        /*border: solid yellow;
+        width: 30%;
+        display: flex;
+        padding: 25px 24px;*/
+        justify-content: center;
+    }
+    .icon-box ul {
+       
+        list-style: none;
+        /*border: solid green;*/
+        display: flex;
+       
+    }
+    .icon-box li {
+        list-style: none;
+        padding: 8px 12px;
+        color: gray;
+        background-color: #ffff;
+        border-radius: 100%;
+        margin: 0px 20px 4px 20px;
+    }
+    .icon-box li:hover {
+        background-color: #F2745F;
+        transition: 0.38s;
+        list-style: none;
+        padding: 8px 12px;
+        color: gray;
+        border-radius: 100%;
+        margin: 4px;
+    }
+    .para-box {
+        
+        color: white;
+     
+        text-align: center;
+    }
+    .para-box p {
+        /*padding-top: 25px;*/
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+
+    .blog-item {
+       
+        width: 75%;
+       
+    }
+    
+    .blog-item img {
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    ul.navbar-nav.mr-auto {
+
+    
+    
+
+        display: flex!important;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0px 20px 0px 80px;
+        background-color: aliceblue;
+    }
+    .nav-item{
+
+        background-color: transparent;
+
+    }
+    .nav-item a{
+        border: none!important;
+        font-size: 14px;
+    }
+
+}

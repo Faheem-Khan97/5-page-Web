@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjq4mCSp0w89AlHmoieInR7D1mAM-TnW0&callback=initMap"
+  type="text/javascript"></script>
+
+
+<link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <header>
+        <div class="heade">
+            <h1> Victory </h1>
+            <hr>
+
+        </div>
+    </header>
+
+   
+    <nav class="navbar navbar-light navbar-expand-lg">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">OUR MENUS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">BLOG ENTRIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+          </ul>
+         
+        </div>
+      </nav>
+
+
+
+      <section class="bg-banner">
+
+        <div class="banner-div">
+           
+            <p id="asian">CONTACT US</p>
+            <p id="desc">Whatever drinking vinegar hella fingerstache shoreditch kickstarter kitsch. La croix hella iceland flexitarian letterpress.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact_section">
+      <div class="left_contact_form">
+          <div class="contact_left_details">
+              <div class="contact_msg_head">
+                  <h2>Message</h2>
+              </div>
+              <div class="contact_input_left">
+                  <input name="name " type="text " id="name " placeholder="Your name..." required=required>
+                  <input name="email " type="email " id="email " placeholder="Your email..." required="required">
+                  <input name="phone " type="phone " id="phone " placeholder="Your phone..." required="required">
+              </div>
+          </div>
+          <div class="contact_right_details">
+              <textarea id="message" name="message" placeholder="Your message..."></textarea>
+              <button type="submit " id="contact_submit" class="contact_submit">SEND MESSAGE</button>
+          </div>
+      </div>
+      <div class="right_contact-info">
+          <div class="contact_info_head">
+              <h2>CONTACT INFO</h2>
+          </div>
+
+          <div class="contact_text">
+              <p>Pellentesque nec orci in erat venenatis viverra. Vivamus in lorem et leo feugiat ullamcorper. Donec volutpat fermentum erat non aliquet. Cras fermentum, risus a blandit sodales, erat turpis eleifend lacus, venenatis mollis leo lorem vel
+                  eros. Quisque et sem tempus, feugiat urna iaculis, tempor metus.</p>
+
+          </div>
+          <div class="cont_address">
+              <em>30 Raffles Ave, <br>Singapore 039803</em>
+          </div>
+      </div>
+  </section>
+
+
+
+    <section class="map">
+   
+        <!--The div element for the map -->
+        <div id="map"></div>
+    </section>
+
+
+    <footer>
+		<div id="footer-container">
+			
+		     <div class="copyright-box">
+		     
+		        <p>Copyright &copy 2020 Victory Template</p>  
+
+
+		    </div>
+		       	
+            <ul>
+                <li class="li"> <i class="fa fa-facebook"></i>  </li>
+                <li class="li"> <i class="fa fa-twitter"></i>  </li>
+                <li class="li"> <i class="fa fa-linkedin"></i>  </li>
+                <li class="li"> <i class="fa fa-rss"></i>  </li>
+                <li class="li"> <i class="fa fa-dribbble"></i>  </li>
+
+            </ul>
+
+	
+            <div class="para-box">
+            
+                <p>Design: TemplateMo</p>
+
+            </div>
+
+
+
+		</div>
+
+
+
+    </footer>
+    
+    <script>
+
+        // Initialize and add the map
+        function initMap() {
+        // The location of Uluru
+
+        const cedcoss = {lat: 26.861456500761047, lng:80.98296003802886};
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: cedcoss,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: cedcoss,
+            map: map,
+        });
+        }
+    </script>
+
+</body>
+</html>
+
+
+
