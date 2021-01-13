@@ -6,107 +6,71 @@
 
 
 header{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-   
-}
-nav{
-    background-color: aliceblue;
-}
-.heade{
+    background-color: #eaf0ff;
     text-align: center;
-    text-decoration: italic;
-    width: 80%;
-    margin: 0px auto;
-
-}
-.heade h3{
-    padding-top: 8px;
-    font-style: italic;
-    font-weight: lighter;
-    font-size: 32px;
-
-}
-.navbar-expand-lg{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-}
-.navbar-toggle, .navbar-toggler {
-    border: none;
-    background-color: rgb(235, 106, 83);
-    margin-bottom: 10px;
-}
-.navbar-toggle:hover, .navbar-toggler:hover{
-    border: none;
-    background-color: rgb(235, 106, 83);
-    position: relative;
+    display: grid;
+    padding: 0% 8%; 
     
-
-
-}
-.navbar-collapse, .collapse{
-
-    width:100%
-}
-.navbar-toggler, .collapsed{
-
-    border: 1px solid rgb(235, 106, 83);
-    outline:none;
-}
-.navbar-toggler-icon{
-
-    color: white;
-    
-}
-.navbar-nav , .mr-auto{
-text-align: center;
+  
 }
 
-a.nav-link {
+header>p {
     padding: 17px 0px;
-}
-.nav-item{
-
-    width: 100%;
-    background-color: rgba(250, 250, 250, 0.5);
-    padding: 0px 2%;
-
-    
-}
-.nav-item a , .nav-item a.active{
-    border-bottom: 1px solid rgb(204, 203, 203)!important;
-    
-    color: rgb(38, 39, 39)!important;
-    letter-spacing: 2px;
-    font-size: 12px;
-    font-weight: lighter!important;
+    padding-top: 16PX;
+    font-size: 44px;
+    font-family: 'Spectral', serif;
+    border-bottom: 1px solid #d8deed;
+    font-weight: 400;
+  
+    color: rgb(44,52,59);
+    font-style: italic;
     
 }
 
-.navbar-inverse {
-    /* background-color: #222; */
-    /* border-color: #080808; */
-
-    background-color: white;
-    border: none;
-}
-button.navbar-toggle{
-    border: none!important;
-    background-color: rgb(235, 106, 83)!important;
-}
-
-button.collapsed:hover{
-    border: none!important;
-    background-color: rgb(235, 106, 83)!important;
+div.horizon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;  
+    
+    width: 50%;
+    margin: auto;
+    padding: 1.5vh 0px;
 }
 
+.horizon a{
+    text-decoration: none;
+   font-family: roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    color: rgb(54, 54, 54);
+    font-size: 13px;
+    line-height: 50px;
+}
 
+div.toggle-button {
+    background-color: rgb(247, 110, 86);
+    padding: 4px 12px;
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.toggle-button span{
+    height: 2px;
+    width: 22px;
+    margin: 5px 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: block;
+}
 
 
 section.bg-banner{
@@ -299,7 +263,7 @@ padding: 0 25%;
     grid-template-columns: 2fr 3fr 2fr ;
     grid-column-gap: 15px;
     align-content: center;
-    height: 25vh;
+    
 }
 ul{
     display: flex;
@@ -331,7 +295,6 @@ ul{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr ;
-   
         align-content: center;
         justify-items: center;
     }
@@ -475,3 +438,90 @@ ul{
     }
 
 }
+
+@media only screen and (max-width: 992px){
+
+    div.horizon{
+        
+        
+        width: 60%;
+        margin: auto;
+      
+    }
+
+
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        padding: 0px 0%;
+    }
+
+    div.toggle-button{
+        display: block;
+        margin: 3vh 0px;
+    }
+
+    div.horizon{
+        display: none;  
+    }
+
+    div.horizon a{
+        border-bottom: 1px solid #d8deed;
+        width: 100%;
+        padding: 2.5vh;
+    }
+
+    #nav-bar{
+
+        background-color: rgba(250, 250, 250, 0.5);
+    }
+   
+    div.display{
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 0%;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    
+    #footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+   
+        align-content: center;
+        justify-items: center;
+    }
+    .li{
+
+        margin-left: 15px;
+    }
+  }
+
+
+  @media screen and (min-width: 992px) {
+
+
+   
+    ul {
+        
+        justify-content: center;
+       
+    }
+    li{
+        margin: 0px 3%;
+    }
+    #footer-container{
+        height: 25vh;
+    }
+
+    
+    
+    
+  }
