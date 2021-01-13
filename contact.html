@@ -20,39 +20,32 @@
 </head>
 <body>
     <header>
-        <div class="heade">
-            <h1> Victory </h1>
-            <hr>
+        
+        <p>Victory</p>
 
+        <div class="toggle-button">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </header>
 
    
-    <nav class="navbar navbar-light navbar-expand-lg">
-      
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="home.html">HOME <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./menu.html">OUR MENUS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./blog.html">BLOG ENTRIES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT US</a>
-              </li>
-          </ul>
-         
-        </div>
-      </nav>
+    
+        <nav id="nav-bar">
 
+        
+            <div class="horizon ">
+                <a href="./index.html">HOME</a>
+                <a href="./menu.html">OUR MENUS</a>
+                <a href="./blog.html">BLOG ENTRIES</a>
+                <a href="./contact.html">CONTACT US</a>
+            </div>
 
+        </nav>
+
+    
+
+    </header>
 
       <section class="bg-banner">
 
@@ -69,7 +62,7 @@
 
 
     <section class="contact_section">
-      <div class="left_contact_form">
+      <form class="left_contact_form">
           <div class="contact_left_details">
               <div class="contact_msg_head">
                   <h2>Message</h2>
@@ -84,7 +77,7 @@
               <textarea id="message" name="message" placeholder="Your message..."></textarea>
               <button type="submit " id="contact_submit" class="contact_submit">SEND MESSAGE</button>
           </div>
-      </div>
+        </form>
       <div class="right_contact-info">
           <div class="contact_info_head">
               <h2>CONTACT INFO</h2>
@@ -145,7 +138,16 @@
     </footer>
     
     <script>
+       
+        let button = document.querySelector('.toggle-button');
+        let menuBar = document.querySelector('.horizon');
 
+        button.addEventListener('click', () => {
+        menuBar.classList.toggle('display');
+        });
+
+        
+   
         // Initialize and add the map
         function initMap() {
         // The location of Uluru
